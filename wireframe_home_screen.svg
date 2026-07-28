@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .frame { fill: #ffffff; stroke: #333333; stroke-width: 3; }
+      .panel { fill: #f2f2f2; stroke: #555555; stroke-width: 1.5; }
+      .widget { fill: #e8e8e8; stroke: #555555; stroke-width: 1.5; }
+      .cta { fill: #d9d9d9; stroke: #222222; stroke-width: 3; }
+      .label { fill: #222222; font-size: 13px; }
+      .small { fill: #444444; font-size: 11px; }
+      .tiny { fill: #666666; font-size: 9.5px; }
+      .anno { fill: #1a1a1a; font-size: 12px; }
+      .annoline { stroke: #888888; stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+      .title { fill: #111111; font-size: 16px; font-weight: bold; }
+      .ghost { fill: none; stroke: #aaaaaa; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+
+  <text x="30" y="32" class="title">BLAST VOYAGE &#8212; Home Screen Wireframe</text>
+  <text x="30" y="52" class="small">Map-as-home. One dominant action (PLAY). All state visible without navigation. Event widgets rail-bound.</text>
+
+  <!-- Phone frame -->
+  <rect x="60" y="80" width="400" height="790" rx="28" class="frame"/>
+
+  <!-- Top bar -->
+  <rect x="80" y="100" width="110" height="40" rx="10" class="panel"/>
+  <text x="92" y="118" class="label">&#9829; 5 / 5</text>
+  <text x="92" y="133" class="tiny">next: 29:59</text>
+
+  <rect x="200" y="100" width="130" height="40" rx="10" class="panel"/>
+  <text x="212" y="125" class="label">&#9679; 12,450  [+]</text>
+
+  <rect x="340" y="100" width="100" height="40" rx="10" class="panel"/>
+  <text x="352" y="125" class="label">Lv 27  &#9881;</text>
+
+  <!-- City backdrop -->
+  <rect x="80" y="160" width="360" height="470" rx="12" class="ghost"/>
+  <text x="98" y="182" class="tiny">CITY BACKDROP: Paris district, landmark restoring behind the level node</text>
+  <!-- skyline suggestion -->
+  <polyline points="95,320 130,275 165,320 200,240 235,320 275,265 310,320 350,250 385,320 425,300" class="annoline"/>
+  <circle cx="200" cy="360" r="34" class="ghost"/>
+  <text x="176" y="364" class="tiny">carousel</text>
+  <text x="170" y="378" class="tiny">(restoring)</text>
+
+  <!-- Left rail widgets -->
+  <rect x="88" y="400" width="96" height="64" rx="10" class="widget"/>
+  <text x="98" y="420" class="small">VOYAGE</text>
+  <text x="98" y="434" class="small">LEAGUE</text>
+  <text x="98" y="452" class="label">#4 &#9650;</text>
+
+  <rect x="88" y="474" width="96" height="64" rx="10" class="widget"/>
+  <text x="98" y="494" class="small">REGATTA</text>
+  <text x="98" y="512" class="label">2 / 7</text>
+  <text x="98" y="528" class="tiny">ends 05:12:44</text>
+
+  <!-- Right rail widgets -->
+  <rect x="336" y="400" width="96" height="64" rx="10" class="widget"/>
+  <text x="346" y="420" class="small">JET STREAM</text>
+  <text x="346" y="440" class="label">&#9679;&#9679;&#9675;</text>
+  <text x="346" y="456" class="tiny">streak: 2 wins</text>
+
+  <rect x="336" y="474" width="96" height="64" rx="10" class="widget"/>
+  <text x="346" y="494" class="small">STARTER</text>
+  <text x="346" y="508" class="small">PACK</text>
+  <text x="346" y="526" class="label">$  02:11:09</text>
+
+  <!-- Coco -->
+  <circle cx="150" cy="620" r="26" class="widget"/>
+  <text x="132" y="624" class="tiny">COCO</text>
+  <text x="118" y="658" class="tiny">(mascot, reacts to state)</text>
+
+  <!-- PLAY CTA -->
+  <rect x="185" y="560" width="150" height="90" rx="16" class="cta"/>
+  <text x="222" y="596" class="title">LEVEL 27</text>
+  <text x="228" y="628" class="title">&#9654; PLAY</text>
+  <text x="196" y="668" class="tiny">pulsing; hard/super-hard flag renders here on wall levels</text>
+
+  <!-- Chapter progress -->
+  <rect x="110" y="690" width="300" height="26" rx="13" class="panel"/>
+  <rect x="110" y="690" width="180" height="26" rx="13" class="widget"/>
+  <text x="150" y="708" class="tiny">PARIS RESTORATION  12 / 20 pieces</text>
+
+  <!-- Bottom nav -->
+  <rect x="80" y="740" width="360" height="60" rx="12" class="panel"/>
+  <rect x="92" y="750" width="104" height="40" rx="8" class="widget"/>
+  <text x="112" y="775" class="small">CREWS</text>
+  <rect x="208" y="750" width="104" height="40" rx="8" class="widget"/>
+  <text x="226" y="775" class="small">EVENTS</text>
+  <rect x="324" y="750" width="104" height="40" rx="8" class="widget"/>
+  <text x="334" y="775" class="small">PASSPORT</text>
+
+  <text x="150" y="830" class="tiny">Home = map. No lobby screen exists in front of the game.</text>
+
+  <!-- Annotations right column -->
+  <text x="490" y="120" class="anno">1. Top bar &#8212; permanent state:</text>
+  <text x="490" y="136" class="anno">lives + regen timer, coins + shop</text>
+  <text x="490" y="152" class="anno">shortcut, level + settings.</text>
+  <path d="M 486 115 L 445 115" class="annoline"/>
+
+  <text x="490" y="200" class="anno">2. Backdrop = progress monument.</text>
+  <text x="490" y="216" class="anno">The restoring landmark is visible</text>
+  <text x="490" y="232" class="anno">on every visit; wins change it.</text>
+  <path d="M 486 205 L 445 220" class="annoline"/>
+
+  <text x="490" y="420" class="anno">3. Perimeter widgets only.</text>
+  <text x="490" y="436" class="anno">Left rail: competitive (league,</text>
+  <text x="490" y="452" class="anno">race). Right rail: momentum +</text>
+  <text x="490" y="468" class="anno">offers. Center path to PLAY is</text>
+  <text x="490" y="484" class="anno">never obstructed.</text>
+  <path d="M 486 430 L 445 430" class="annoline"/>
+
+  <text x="490" y="580" class="anno">4. One giant obvious action.</text>
+  <text x="490" y="596" class="anno">New player sees one button;</text>
+  <text x="490" y="612" class="anno">veteran sees a dashboard &#8212;</text>
+  <text x="490" y="628" class="anno">same screen, hierarchy does</text>
+  <text x="490" y="644" class="anno">the work.</text>
+  <path d="M 486 590 L 340 600" class="annoline"/>
+
+  <text x="490" y="700" class="anno">5. Chapter meter ties every win</text>
+  <text x="490" y="716" class="anno">to the restoration payoff.</text>
+  <path d="M 486 705 L 415 703" class="annoline"/>
+
+  <text x="490" y="765" class="anno">6. Bottom nav: the only three</text>
+  <text x="490" y="781" class="anno">destinations. Everything else</text>
+  <text x="490" y="797" class="anno">is reachable from widgets.</text>
+  <path d="M 486 770 L 445 770" class="annoline"/>
+</svg>

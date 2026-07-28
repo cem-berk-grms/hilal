@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="940" viewBox="0 0 760 940" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .frame { fill: #ffffff; stroke: #333333; stroke-width: 3; }
+      .panel { fill: #f2f2f2; stroke: #555555; stroke-width: 1.5; }
+      .widget { fill: #e8e8e8; stroke: #555555; stroke-width: 1.5; }
+      .label { fill: #222222; font-size: 13px; }
+      .big { fill: #111111; font-size: 20px; font-weight: bold; }
+      .small { fill: #444444; font-size: 11px; }
+      .tiny { fill: #666666; font-size: 9.5px; }
+      .anno { fill: #1a1a1a; font-size: 12px; }
+      .annoline { stroke: #888888; stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+      .title { fill: #111111; font-size: 16px; font-weight: bold; }
+      .cellA { fill: #ffffff; stroke: #777777; stroke-width: 1; }
+      .cellB { fill: #dddddd; stroke: #777777; stroke-width: 1; }
+      .cellC { fill: #bbbbbb; stroke: #777777; stroke-width: 1; }
+      .cellP { fill: #f6f6f6; stroke: #222222; stroke-width: 2; }
+      .cellO { fill: #999999; stroke: #444444; stroke-width: 1.5; }
+      .meterbg { fill: #f2f2f2; stroke: #555555; stroke-width: 1.5; }
+      .meterfill { fill: #c4c4c4; stroke: none; }
+      .pu { fill: #111111; font-size: 12px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <text x="30" y="32" class="title">BLAST VOYAGE &#8212; Gameplay Screen Wireframe</text>
+  <text x="30" y="52" class="small">Board maximized. Moves = largest number on screen. Breeze Meter always visible. Boosters priced in-slot at zero count.</text>
+
+  <!-- Phone frame -->
+  <rect x="60" y="80" width="400" height="820" rx="28" class="frame"/>
+
+  <!-- Goal panel -->
+  <rect x="80" y="100" width="230" height="64" rx="12" class="panel"/>
+  <text x="94" y="122" class="small">GOALS</text>
+  <rect x="94" y="130" width="42" height="26" rx="6" class="widget"/>
+  <text x="100" y="148" class="label">C 12</text>
+  <rect x="146" y="130" width="42" height="26" rx="6" class="widget"/>
+  <text x="152" y="148" class="label">P 5</text>
+  <rect x="198" y="130" width="42" height="26" rx="6" class="widget"/>
+  <text x="204" y="148" class="label">B 30</text>
+  <text x="94" y="172" class="tiny" />
+
+  <rect x="322" y="100" width="118" height="64" rx="12" class="panel"/>
+  <text x="345" y="122" class="small">MOVES</text>
+  <text x="362" y="152" class="big">24</text>
+
+  <!-- Breeze meter -->
+  <rect x="80" y="190" width="26" height="540" rx="13" class="meterbg"/>
+  <rect x="80" y="520" width="26" height="210" rx="13" class="meterfill"/>
+  <text x="93" y="470" class="tiny" transform="rotate(-90 93 470)">BREEZE METER &#8212; fills per balloon popped (25) &#8212; spawns PAPER PLANE</text>
+
+  <!-- Board 9x9 -->
+  <!-- grid origin 120,190 cell 35 -->
+  <g>
+    <!-- row 1 -->
+    <rect x="120" y="190" width="35" height="35" class="cellA"/><rect x="155" y="190" width="35" height="35" class="cellB"/><rect x="190" y="190" width="35" height="35" class="cellB"/><rect x="225" y="190" width="35" height="35" class="cellC"/><rect x="260" y="190" width="35" height="35" class="cellA"/><rect x="295" y="190" width="35" height="35" class="cellA"/><rect x="330" y="190" width="35" height="35" class="cellB"/><rect x="365" y="190" width="35" height="35" class="cellC"/><rect x="400" y="190" width="35" height="35" class="cellA"/>
+    <!-- row 2 -->
+    <rect x="120" y="225" width="35" height="35" class="cellB"/><rect x="155" y="225" width="35" height="35" class="cellP"/><rect x="190" y="225" width="35" height="35" class="cellB"/><rect x="225" y="225" width="35" height="35" class="cellA"/><rect x="260" y="225" width="35" height="35" class="cellC"/><rect x="295" y="225" width="35" height="35" class="cellA"/><rect x="330" y="225" width="35" height="35" class="cellB"/><rect x="365" y="225" width="35" height="35" class="cellA"/><rect x="400" y="225" width="35" height="35" class="cellB"/>
+    <text x="163" y="248" class="pu">F&#8594;</text>
+    <!-- row 3 -->
+    <rect x="120" y="260" width="35" height="35" class="cellC"/><rect x="155" y="260" width="35" height="35" class="cellA"/><rect x="190" y="260" width="35" height="35" class="cellA"/><rect x="225" y="260" width="35" height="35" class="cellB"/><rect x="260" y="260" width="35" height="35" class="cellP"/><rect x="295" y="260" width="35" height="35" class="cellB"/><rect x="330" y="260" width="35" height="35" class="cellC"/><rect x="365" y="260" width="35" height="35" class="cellA"/><rect x="400" y="260" width="35" height="35" class="cellA"/>
+    <text x="270" y="283" class="pu">B</text>
+    <!-- row 4 -->
+    <rect x="120" y="295" width="35" height="35" class="cellA"/><rect x="155" y="295" width="35" height="35" class="cellB"/><rect x="190" y="295" width="35" height="35" class="cellC"/><rect x="225" y="295" width="35" height="35" class="cellC"/><rect x="260" y="295" width="35" height="35" class="cellA"/><rect x="295" y="295" width="35" height="35" class="cellB"/><rect x="330" y="295" width="35" height="35" class="cellA"/><rect x="365" y="295" width="35" height="35" class="cellB"/><rect x="400" y="295" width="35" height="35" class="cellC"/>
+    <!-- row 5 -->
+    <rect x="120" y="330" width="35" height="35" class="cellB"/><rect x="155" y="330" width="35" height="35" class="cellA"/><rect x="190" y="330" width="35" height="35" class="cellB"/><rect x="225" y="330" width="35" height="35" class="cellP"/><rect x="260" y="330" width="35" height="35" class="cellA"/><rect x="295" y="330" width="35" height="35" class="cellC"/><rect x="330" y="330" width="35" height="35" class="cellB"/><rect x="365" y="330" width="35" height="35" class="cellA"/><rect x="400" y="330" width="35" height="35" class="cellB"/>
+    <text x="233" y="353" class="pu">&#9992;</text>
+    <!-- row 6 -->
+    <rect x="120" y="365" width="35" height="35" class="cellA"/><rect x="155" y="365" width="35" height="35" class="cellC"/><rect x="190" y="365" width="35" height="35" class="cellA"/><rect x="225" y="365" width="35" height="35" class="cellB"/><rect x="260" y="365" width="35" height="35" class="cellB"/><rect x="295" y="365" width="35" height="35" class="cellA"/><rect x="330" y="365" width="35" height="35" class="cellC"/><rect x="365" y="365" width="35" height="35" class="cellB"/><rect x="400" y="365" width="35" height="35" class="cellA"/>
+    <!-- row 7 -->
+    <rect x="120" y="400" width="35" height="35" class="cellB"/><rect x="155" y="400" width="35" height="35" class="cellA"/><rect x="190" y="400" width="35" height="35" class="cellO"/><rect x="225" y="400" width="35" height="35" class="cellO"/><rect x="260" y="400" width="35" height="35" class="cellC"/><rect x="295" y="400" width="35" height="35" class="cellA"/><rect x="330" y="400" width="35" height="35" class="cellB"/><rect x="365" y="400" width="35" height="35" class="cellC"/><rect x="400" y="400" width="35" height="35" class="cellB"/>
+    <text x="196" y="423" class="tiny">CR2</text><text x="231" y="423" class="tiny">CR1</text>
+    <!-- row 8 -->
+    <rect x="120" y="435" width="35" height="35" class="cellC"/><rect x="155" y="435" width="35" height="35" class="cellB"/><rect x="190" y="435" width="35" height="35" class="cellO"/><rect x="225" y="435" width="35" height="35" class="cellO"/><rect x="260" y="435" width="35" height="35" class="cellA"/><rect x="295" y="435" width="35" height="35" class="cellB"/><rect x="330" y="435" width="35" height="35" class="cellA"/><rect x="365" y="435" width="35" height="35" class="cellA"/><rect x="400" y="435" width="35" height="35" class="cellC"/>
+    <text x="196" y="458" class="tiny">CR1</text><text x="231" y="458" class="tiny">CR2</text>
+    <!-- row 9 -->
+    <rect x="120" y="470" width="35" height="35" class="cellA"/><rect x="155" y="470" width="35" height="35" class="cellA"/><rect x="190" y="470" width="35" height="35" class="cellB"/><rect x="225" y="470" width="35" height="35" class="cellC"/><rect x="260" y="470" width="35" height="35" class="cellB"/><rect x="295" y="470" width="35" height="35" class="cellA"/><rect x="330" y="470" width="35" height="35" class="cellC"/><rect x="365" y="470" width="35" height="35" class="cellB"/><rect x="400" y="470" width="35" height="35" class="cellA"/>
+  </g>
+  <text x="120" y="524" class="tiny">Shades = balloon colors (each also carries a unique symbol for colorblind parsing).</text>
+  <text x="120" y="538" class="tiny">F&#8594; Firework (arrow = firing direction, previewed) &#183; B Confetti Bomb &#183; &#9992; Paper Plane &#183; CR1/CR2 crate layers left</text>
+
+  <!-- Group badge callout example -->
+  <rect x="295" y="435" width="70" height="35" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="300" y="560" class="tiny">Dashed outline: a 5-group currently displays its pre-tap badge</text>
+  <text x="300" y="573" class="tiny">(Firework + orientation) directly on the balloons.</text>
+
+  <!-- Booster tray -->
+  <rect x="80" y="760" width="360" height="76" rx="14" class="panel"/>
+  <rect x="94" y="772" width="72" height="52" rx="10" class="widget"/>
+  <text x="106" y="794" class="small">PIN</text>
+  <text x="106" y="812" class="label">x3</text>
+  <rect x="176" y="772" width="72" height="52" rx="10" class="widget"/>
+  <text x="182" y="794" class="small">BOOMER.</text>
+  <text x="188" y="812" class="label">x2</text>
+  <rect x="258" y="772" width="72" height="52" rx="10" class="widget"/>
+  <text x="268" y="794" class="small">ANCHOR</text>
+  <text x="270" y="812" class="label">x1</text>
+  <rect x="340" y="772" width="72" height="52" rx="10" class="widget"/>
+  <text x="346" y="794" class="small">WHIRLW.</text>
+  <text x="352" y="812" class="label">&#9679; 350</text>
+
+  <rect x="80" y="850" width="70" height="34" rx="10" class="widget"/>
+  <text x="96" y="872" class="label">&#9881; ||</text>
+  <text x="164" y="872" class="tiny">Pause: resume / sound / quit (with life warning)</text>
+
+  <!-- Annotations -->
+  <text x="490" y="118" class="anno">1. Goal panel: live counters;</text>
+  <text x="490" y="134" class="anno">collected items fly from board</text>
+  <text x="490" y="150" class="anno">into these icons (cause &#8594; effect).</text>
+  <path d="M 486 122 L 315 125" class="annoline"/>
+
+  <text x="490" y="190" class="anno">2. MOVES: largest number on</text>
+  <text x="490" y="206" class="anno">screen; pulses red at &#8804;5.</text>
+  <path d="M 486 194 L 445 150" class="annoline"/>
+
+  <text x="490" y="300" class="anno">3. Board: max area, oversized</text>
+  <text x="490" y="316" class="anno">touch targets, fixed camera,</text>
+  <text x="490" y="332" class="anno">always fully visible.</text>
+  <path d="M 486 305 L 445 305" class="annoline"/>
+
+  <text x="490" y="380" class="anno">4. Power-ups occupy tiles and</text>
+  <text x="490" y="396" class="anno">show their effect on their art</text>
+  <text x="490" y="412" class="anno">(Firework wears its direction).</text>
+  <path d="M 486 385 L 300 283" class="annoline"/>
+
+  <text x="490" y="470" class="anno">5. Obstacles draw remaining</text>
+  <text x="490" y="486" class="anno">layers on the object &#8212; no</text>
+  <text x="490" y="502" class="anno">hidden health anywhere.</text>
+  <path d="M 486 475 L 262 440" class="annoline"/>
+
+  <text x="490" y="600" class="anno">6. Breeze Meter (left rail):</text>
+  <text x="490" y="616" class="anno">visible progress toward the</text>
+  <text x="490" y="632" class="anno">next Paper Plane &#8212; "hope"</text>
+  <text x="490" y="648" class="anno">rendered as permanent UI.</text>
+  <path d="M 486 605 L 108 560" class="annoline"/>
+
+  <text x="490" y="790" class="anno">7. Booster tray: counts shown;</text>
+  <text x="490" y="806" class="anno">zero-count slot shows its coin</text>
+  <text x="490" y="822" class="anno">price in place. No move cost.</text>
+  <path d="M 486 795 L 445 795" class="annoline"/>
+</svg>
