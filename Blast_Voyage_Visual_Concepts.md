@@ -89,4 +89,34 @@ Chapter progression as geography: the golden route hops Paris → Tokyo → Ista
 
 ---
 
+## 10. Post-50 Obstacle Pipeline (Design doc §4.4, concept backlog)
+
+The content roadmap beyond the first 50 levels: **one new behavior class per chapter — each a new rule, not a re-skin** — so the obstacle grammar stays small while the puzzle space compounds.
+
+### 10.1 Customs Gate — color locks
+
+A locked barrier that opens **only when a group of the matching balloon color is popped adjacent to it**. This is the mechanic that finally makes *color choice* strategic (until now, which color you pop is dictated by geometry; the Gate makes it a goal in itself). Shown in two color variants, with a red group about to open the red lock.
+
+![Customs Gate obstacle](visuals/obstacle_customs_gate.png)
+
+### 10.2 Ticket Booth — the reverse-spawner
+
+An obstacle that **consumes one adjacent balloon every turn**, pulling it through its window. Where Mailboxes add items to the board, the Booth subtracts them — draining the player's raw material and creating gentle time pressure without a timer. Cute and mischievous rather than menacing, in keeping with the game's tone.
+
+![Ticket Booth obstacle](visuals/obstacle_ticket_booth.png)
+
+### 10.3 Lanterns — chain-linked pairs
+
+Festival lanterns joined by a golden chain: **both must be cleared in the same turn** or neither clears. Introduces *simultaneity* — the first mechanic that demands one action resolve two places at once, which is exactly what power-up combos (a wide Firework cross, a Plane-carried Bomb) are built for. The chain and matching emblems make the pairing readable at a glance.
+
+![Lanterns obstacle pair](visuals/obstacle_lanterns.png)
+
+### 10.4 Cuckoo Clock — the countdown
+
+A carved Alpine clock that **must be cleared within N moves of first exposure**, its dial counting down each turn. The only obstacle with a deadline in an otherwise timer-free game — used sparingly for late-chapter drama. Both states shown: the calm state (5 moves remaining) and the alarmed low-countdown state (2 moves, wood flushing red, bird panicking) — urgency drawn on the object, per the "no hidden state" rule.
+
+![Cuckoo Clock obstacle](visuals/obstacle_cuckoo_clock.png)
+
+---
+
 *Note on usage: these are AI-assisted concept visuals produced to communicate art direction and readability intent (per case study Note 2, concept ideas may be backed by reference imagery). Final production art would be authored by the art team to these specifications.*
